@@ -1,0 +1,95 @@
+body {
+    color: black;
+}
+
+h1,
+h2,
+.calendar,
+.toDoForm {
+    text-align: center;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.container {
+    border:1px solid black;
+    width: 480px;
+    height: 500px;
+    margin: 1rem 2rem;
+    padding: 3rem 0;
+    vertical-align: middle;
+}
+
+.calendarTable,
+th,
+td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 40px;
+}
+
+.sun {
+    color: red;
+}
+
+.sat {
+    color: blue;
+}
+
+.lastMonth,
+.nextMonth {
+    opacity: 0.5;
+    color: black;
+}
+
+.today {
+    background-color: #2ecc71;
+}
+
+.chosen {
+    border: 4px inset #f1c40f;
+}
+
+.toDo {
+    list-style-position: inside;
+}
+
+.toDoList {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bgImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
