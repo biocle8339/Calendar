@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+    <div class="pageName">
+        <h1>Calendar</h1>
+    </div>
+    <section>
+        <!--Calendar-->
+        <div class="container calendar">
+            <h2 class="day"></h2>
+            <h3 class="month_yr"></h3>
+            <table class="calendarTable">
+                <thead>
+                    <tr class = "dayName">
+                        <th class="sun">SUN</th>
+                        <th class="MON">MON</th>
+                        <th class="tue">TUE</th>
+                        <th class="wed">WED</th>
+                        <th class="thu">THU</th>
+                        <th class="fri">FRI</th>
+                        <th class="sat">SAT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button class="last" type="button"><<</button>
+            <button class="next" type="button">>></button>
+        </div>
+
+        <!--ToDo-->
+        <div class="container toDo">
+            <h2>Todo List</h2>
+            <form class="toDoForm">
+                <input type="text" placeholder = "Write what to do" />
+            </form>
+            <ul class = "toDoList">
+            </ul>
+        </div>
+    </section>
+
+    <script src = "calendar.js"></script>
+    <script src = "todo.js"></script>
+    <script src = "bg.js"></script>
+</body>
+</html>
